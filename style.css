@@ -1,53 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: linear-gradient(#0f2027, #203a43, #2c5364);
+    font-family: Arial, sans-serif;
     color: white;
+    background: linear-gradient(135deg, #0b0f25, #2a3061, #4b5fa9);
+    background-attachment: fixed;
 }
 
 header {
     background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(6px);
     padding: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
-    margin: 0 15px;
-    color: #fff;
+    margin: 0 10px;
+    color: yellow;
     text-decoration: none;
     font-weight: bold;
 }
 
+nav a:hover {
+    color: white;
+}
+
 .hero {
     text-align: center;
-    margin-top: 50px;
+    padding: 80px;
 }
 
-.profile {
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-}
-
-.highlight {
+.hero span {
     color: yellow;
+    font-weight: bold;
+}
+
+.buttons .btn {
+    margin: 10px;
 }
 
 .btn {
-    padding: 10px 20px;
-    border: none;
     background: yellow;
     color: black;
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
     border-radius: 8px;
 }
 
-.content-card {
-    background: rgba(255,255,255,0.1);
+.card {
     width: 70%;
-    margin: 50px auto;
-    padding: 30px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
     border-radius: 10px;
 }
 
@@ -56,7 +63,13 @@ table {
     border-collapse: collapse;
 }
 
-table th, table td {
+th, td {
+    padding: 8px;
     border-bottom: 1px solid white;
-    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
 }
